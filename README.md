@@ -4,9 +4,21 @@
 
 ## プロジェクト構成
 
-- `confidential-tokens/` - Solanaのコンフィデンシャル転送機能を利用したトークン実装
-  - [Confidential Tokens のドキュメント](confidential-tokens/docs/product_guide.md)
+- `ingredients/` - Solanaのコンフィデンシャル転送機能の実装コンポーネント
+- `recipes/` - コンフィデンシャル転送のテスト実行シーケンス
+- `utils/` - ユーティリティ関数
+
+## Confidential Tokens
+
+<img src="https://github.com/user-attachments/assets/02292d9c-1da1-492a-9bad-286698b59783" width="500" />
+
+Solanaのコンフィデンシャル転送機能を利用したトークン実装です。
+このリポジトリには、[Token Program CLI](https://github.com/solana-program/token-2022/tree/969cff212c0e0add812932e50f6771933f14ff5c/clients/cli)に類似したコンフィデンシャル転送フローを実装しています。
 
 ## セットアップ
 
-各コントラクトのディレクトリ内にあるREADMEやセットアップガイドを参照してください。 
+以下の手順でセットアップを行ってください：
+
+1. `.env.example`ファイルを`.env`にコピーします
+2. 必要に応じて`.env`ファイルを編集します
+3. `cargo build`を実行します 
